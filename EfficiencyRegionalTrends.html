@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Page Title</title>
+</head>
+<body style="background-color: #C1E1C1;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nd_athletics_gold_logo_2015.svg/1200px-Nd_athletics_gold_logo_2015.svg.png" class="mr-2" alt="Project Logo" style="width: 50px; height: 50px; object-fit: contain;">
+<a class="navbar-brand font-weight-bold" href="index.html" style="color: #FFFFFF !important;">
+    Analyzing the Global Shift to Renewable Energies
+    <small class="d-block" style="font-weight: normal; font-size: 75%; opacity: 0.8;">
+        By Oscar Berg and Benny Ortega
+    </small>
+</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html" style="color: #62b6f9 !important;"><u>Home</u> <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="EconScaleEnergy.html" style="color: #62b6f9 !important;"><u>Economic Scale & Energy</u></a></li>
+                <li class="nav-item"><a class="nav-link" href="EfficiencyRegionalTrends.html" style="color: #62b6f9 !important;"><u><b>Efficiency & Regional Trends</b></u></a></li>
+                <li class="nav-item"><a class="nav-link" href="EnergyChangeOverTime.html" style="color: #62b6f9 !important;"><u>Energy change Over Time</u></a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 font-weight-bold" style="color: #00332c !important;">Efficiency and Regional Trends</h1>
+            <p class="lead" style="color: #333333;">Exploring regional trends of energy efficiency.</p>
+        </header>
+
+        <section class="mb-5 p-4 border rounded shadow-sm" style="background-color: #e8f5e9; border-color: #26a69a !important;">
+            <h2 class="h4 mb-4" style="color: #004d40;">Least Efficient Economies (Energy consumed per $ GDP)</h2>
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center mb-4">
+                    <iframe src="LeastEfficientEconomies.html" height="550" width="100%" class="rounded border" style="border-color: #26a69a !important;"></iframe>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <p class="text-dark">
+                        This is a <b>bar graph</b> of the 15 least energy-efficient economies based on their energy intensity (Total energy consumption divided by GDP) in order.
+                        This chart reveals that <b>low energy efficiency</b> is not only tied to a <b>low GDP</b>, as shown by nations with larger GDPs on the graph.
+                        Further, it shows that countries with similar GDPs can have different energy intensities, implying that factors other than economic output influence energy usage.
+                        The graph also reveals <b>regional trends in energy</b> inefficiency around former Soviet, Central Asian, and Middle Eastern nations.                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 p-4 border rounded shadow-sm" style="background-color: #e8f5e9; border-color: #26a69a !important;">
+            <h2 class="h4 mb-4" style="color: #004d40;">Global Energy Intensity</h2>
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center mb-4">
+                    <iframe src="GlobalEnergyIntensity.html" height="550" width="100%" class="rounded border" style="border-color: #26a69a !important;"></iframe>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <p class="text-dark">
+                        This is a <b>choropleth map</b> of global energy intensity.
+                        The graph reveals that <b>Western Europe</b> has one of the <b>most efficient</b> regional energy intensities.
+                        On the other hand, it also shows that <b>Eastern Europe</b> and the <b>Middle East</b> have one of the <b>least efficient</b> regional energy intensities, implying that they may be reliant on energy-intensive industries.
+                        Overall, it also reveals that regional neighbors have similar levels of energy intensity, meaning that <b>nearby countries</b> can <b>influence energy policy</b> changes.                     </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 p-4 border rounded shadow-sm" style="background-color: #e8f5e9; border-color: #26a69a !important;">
+            <h2 class="h4 mb-4" style="color: #004d40;">Energy Consumption vs Renewable Share</h2>
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center mb-4">
+                    <iframe src="EnergyConsumptionVsRenewableShare.html" height="550" width="100%" class="rounded border" style="border-color: #26a69a !important;"></iframe>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <p class="text-dark">
+                        This figure is a <b>scatter plot</b> of the percent of renewable sources within a nation against total energy used per capita,
+                        using population as the size of the countries. This graph reveals that <b>higher percentage of renewable energy on average,
+                        is linked to a slight decrease in energy consumed per capita.</b>
+                        It additionally shows that <b>most of the world still does not primarily use renewable energy</b> as its main energy source.
+                        It also reveals that countries with <b>high populations do not use large amounts of renewable energies</b>, most using <b>under 25%</b>.
+                    </p>
+                </div>
+            </div>
+        </section>
+</body>
+<!-- footer starts -->
+     <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-3 border-bottom border-secondary pb-2", style="color: #62b6f9;">Project Authorship</h5>
+                <p class="mb-1 text-secondary small">Thank you for reading through!</p>
+                <p class="lead mb-1">
+					<b><em>Oscar Berg</em></b>
+                </p>
+                <p class="lead mb-0">
+                    <b><em>Benny Ortega</em></b>
+                </p>
+            </div>
+
+            <div class="col-md-5 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-3 border-bottom border-secondary pb-2", style="color: #62b6f9;">Data Resources</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="https://github.com/datasets/gdp/blob/main/data/gdp.csv" target="_blank" class="text-white text-decoration-none hover-underline">
+							<i class="bi bi-box-arrow-up-right me-2"></i><u>Dataset for GDP</u>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/owid/energy-data/blame/master/owid-energy-data.csv" target="_blank" class="text-white text-decoration-none hover-underline">
+                            <i class="bi bi-box-arrow-up-right me-2"></i><u>Dataset for Environmental Impact</u>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="text-uppercase mb-3 border-bottom border-secondary pb-2", style="color: #62b6f9;">University</h5>
+                <p class="small text-secondary">
+                    University of Notre Dame <br>
+                    <small>College of Engineering</small><br>
+					<small>College of Arts and Letters</small>
+                </p>
+            </div>
+        </div>
+
+        <hr class="mt-4 mb-3 border-secondary">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-secondary small mb-0">
+                    &copy; Copyright 2025 University of Notre Dame. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

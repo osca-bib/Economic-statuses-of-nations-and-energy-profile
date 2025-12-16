@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Page Title</title>
+</head>
+<body style="background-color: #c9edfa;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nd_athletics_gold_logo_2015.svg/1200px-Nd_athletics_gold_logo_2015.svg.png" class="mr-2" alt="Project Logo" style="width: 50px; height: 50px; object-fit: contain;">
+<a class="navbar-brand font-weight-bold" href="index.html" style="color: #FFFFFF !important;">
+    Analyzing the Global Shift to Renewable Energies
+    <small class="d-block" style="font-weight: normal; font-size: 75%; opacity: 0.8;">
+        By Oscar Berg and Benny Ortega
+    </small>
+</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html" style="color: #62b6f9 !important;"><u>Home</u> <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="EconScaleEnergy.html" style="color: #62b6f9 !important;"><u><b>Economic Scale & Energy</b></u></a></li>
+                <li class="nav-item"><a class="nav-link" href="EfficiencyRegionalTrends.html" style="color: #62b6f9 !important;"><u>Efficiency & Regional Trends</u></a></li>
+                <li class="nav-item"><a class="nav-link" href="EnergyChangeOverTime.html" style="color: #62b6f9 !important;"><u>Energy change Over Time</u></a></li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 font-weight-bold" style="color: #00332c !important;">Economic Scale and Energy</h1>
+            <p class="lead" style="color: #333333;">Exploring the correlation between a nation's wealth, energy consumption, and renewable energy adoption.</p>
+        </header>
+
+        <section class="mb-5 p-4 border rounded shadow-sm" style="background-color: #e8f5e9; border-color: #26a69a !important;">
+            <h2 class="h4 mb-4" style="color: #004d40;">GDP vs. Total Energy Consumption</h2>
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center mb-4">
+                    <iframe src="fig1.html" height="550" width="100%" class="rounded border" style="border-color: #26a69a !important;"></iframe>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <p class="text-dark">
+                        This graph is a <b>scatter plot</b> on a logarithmic scale, plotting the GDP of countries against their total energy consumption.
+                        The visualization reveals a <b>strong positive logarithmic relationship</b> between a country's total GDP and its energy consumption.
+                        This suggests a power relationship between GDP and energy usage: as GDP grows, energy usage tends to increase exponentially.
+                        Furthermore, the plot shows that countries with similar GDPs can have significantly different total energy usage,
+                        suggesting that wealth is a key but not the sole in factor determining a nation's energy use.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 p-4 border rounded shadow-sm" style="background-color: #e8f5e9; border-color: #26a69a !important;">
+            <h2 class="h4 mb-4" style="color: #004d40;">Correlation Matrix (GDP, Energy, Renewable Share)</h2>
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center mb-4">
+                    <iframe src="CorrelationMatrix.html" height="550" width="100%" class="rounded border" style="border-color: #26a69a !important;"></iframe>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <p class="text-dark">
+                        This is a <b>correlation matrix</b>, analyzing the relationship between GDP, total energy consumption, renewable energy percentage, and energy per capita.
+                        It numerically supports the visual trend seen in "GDP vs. Total Energy Consumption" above, with a high correlation of <b>89%</b> between GDP and total energy consumption.
+                        Crucially, the matrix shows a <b>-7% correlation</b> between total energy consumption and renewable energy share, indicating that countries consuming more energy do not tend to have a higher proportion of renewable-based energy.
+                        Additionally, the <b>-5% correlation</b> between GDP and the percentage of renewable energy demonstrates that nations with more advanced economies have not yet fully committed to shifting towards green energy.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 p-4 border rounded shadow-sm" style="background-color: #e8f5e9; border-color: #26a69a !important;">
+            <h2 class="h4 mb-4" style="color: #004d40;">Energy Demanded per Capita: Above vs. Below Average GDP</h2>
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center mb-4">
+                    <iframe src="EnergyDemandedPerCapita.html" height="550" width="100%" class="rounded border" style="border-color: #26a69a !important;"></iframe>
+                </div>
+                <div class="col-md-10 offset-md-1">
+                    <p class="text-dark">
+                        This figure uses a <b>violin visualization</b> to compare the per capita energy usage of nations with above-average and below-average GDPs.
+                        The graph reveals that, on average, nations with <b>above-average GDP utilize significantly more energy per capita</b>.
+                        It also demonstrates that nations with below-average GDP have a very diverse spread of energy per capita usage (a wider violin shape), suggesting a lack of strong correlation between per capita energy use and GDP at the lower economic scale.
+                        However, many higher-GDP nations show per capita energy usage equivalent to lower-GDP nations, further complicating the overall correlation between these two variables.
+                    </p>
+                </div>
+            </div>
+        </section>
+</body>
+<!-- footer starts -->
+     <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-3 border-bottom border-secondary pb-2", style="color: #62b6f9;">Project Authorship</h5>
+                <p class="mb-1 text-secondary small">Thank you for reading through!</p>
+                <p class="lead mb-1">
+					<b><em>Oscar Berg</em></b>
+                </p>
+                <p class="lead mb-0">
+                    <b><em>Benny Ortega</em></b>
+                </p>
+            </div>
+
+            <div class="col-md-5 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-3 border-bottom border-secondary pb-2", style="color: #62b6f9;">Data Resources</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="https://github.com/datasets/gdp/blob/main/data/gdp.csv" target="_blank" class="text-white text-decoration-none hover-underline">
+							<i class="bi bi-box-arrow-up-right me-2"></i><u>Dataset for GDP</u>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/owid/energy-data/blame/master/owid-energy-data.csv" target="_blank" class="text-white text-decoration-none hover-underline">
+                            <i class="bi bi-box-arrow-up-right me-2"></i><u>Dataset for Environmental Impact</u>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="text-uppercase mb-3 border-bottom border-secondary pb-2", style="color: #62b6f9;">University</h5>
+                <p class="small text-secondary">
+                    University of Notre Dame <br>
+                    <small>College of Engineering</small><br>
+					<small>College of Arts and Letters</small>
+                </p>
+            </div>
+        </div>
+
+        <hr class="mt-4 mb-3 border-secondary">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-secondary small mb-0">
+                    &copy; Copyright 2025 University of Notre Dame. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
